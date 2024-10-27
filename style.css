@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+  }
+
+  #mainNav{
+    background-color: #424242;
+    height: 3.7em;
+    
+    
+  }
+
+#navbar-items a{
+    padding: 18px;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500px;
+}
+
+#navbar-div{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero{
+    height: 670px;
+    background-color: aqua;
+}
