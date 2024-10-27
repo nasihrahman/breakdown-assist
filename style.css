@@ -120,7 +120,7 @@ li {
     width: 42px;
     border-radius: 50%;
     border: 2px solid #ddd;
-    position: absolute; // yeah, you have to manually position it based on the text size, line height, etc. (in the parent li style). it's not the smarest solution 
+    position: absolute; 
     top: -12px;
     left: -46px;
   }
