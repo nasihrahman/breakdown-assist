@@ -6,16 +6,25 @@
   }
 
   #mainNav{
-    background-color: #424242;
-    height: 3.7em;
-    
-    
+    background-color: #0C0C0C;
+    height: 4em; 
+  }
+
+  @font-face {
+    font-family: Bigger;
+    src: url(font/BiggerDisplay.otf);
   }
 
 #navbar-items a{
     padding: 18px;
     font-family: 'Poppins','sans-serif';
     font-weight: 500px;
+    font-size: medium;
+    /* color: #FCFAEE; */
+}
+
+.navbar-brand{
+  margin-left: 30px;
 }
 
 #navbar-div{
@@ -24,7 +33,102 @@
 }
 
 
-.hero{
-    height: 670px;
-    background-color: aqua;
+.hero-container{
+    height: 665px;
+    background-color: #FCFAEE;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-image: url('/pictures/Untitled\ design.png');
+}
+
+
+.hero-text{
+  width: 33rem;
+  height: 25rem;
+  border: 2.5px solid #FCFAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.hero-text h4{
+  color: #FCFAEE;
+  font-family: 'Bigger','Poppins';
+  font-size: 20px;
+}
+
+.hero-text h1{
+  color: #FCFAEE;
+  font-family: 'Bigger','Poppins';
+  font-size: 40Px;
+}
+
+#hero-btn{
+  width: 16.4rem;
+  height: 3rem;
+  background-color: #FCFAEE;
+  border: 2px solid #E2E2B6;
+  color: #03346E;
+  font-family: 'Poppins';
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.part1 ul{  
+  list-style-type: decimal !important;
+  padding-left:1em !important;
+  margin-left:1em;
+}
+
+
+
+
+.part1 { 
+  font-family: 'Space Mono', monospace; 
+  display: flex;
+  flex-direction: column;
+  max-width: 420px;
+  padding: 32px;
+  margin: 60px auto;
+  border: 1px solid #eee;
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+* { 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizelegibility;
+  letter-spacing: -0.25px;
+}
+
+ol { padding-left: 50px; }
+li { 
+  color: #4F4F4F; 
+  padding-left: 16px;
+  margin-top: 24px;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  
+  &:before {
+    content: '';
+    display: block;
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    position: absolute; // yeah, you have to manually position it based on the text size, line height, etc. (in the parent li style). it's not the smarest solution 
+    top: -12px;
+    left: -46px;
+  }
+}
+
+strong { color: #292929; }
+
+ol.alternating-colors { 
+  li:nth-child(odd):before { border-color: #0BAD02; }
+  li:nth-child(even):before { border-color: #2378D5; }
 }
