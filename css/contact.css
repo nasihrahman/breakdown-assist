@@ -1,0 +1,33 @@
+/* Basic styling for the Contact Us form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+#contact-us {
+    background-color: #fff;
+    padding: 60px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-weight: bold;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #ffdd00;
+    color: #333;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+}
+
+#responseMessage {
+    text-align: center;
+    font-weight: bold;
+    color: green;
+}
