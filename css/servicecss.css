@@ -15,7 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #021526;
+    background-color: #dddddd;
 }
 .main{
     display: flex;
@@ -66,9 +66,12 @@ label {
     display: flex;
 }
 .left-container{
-    height: 100%;
+    border-radius: 20px 0px 0px 20px;
     background-color: #6e8efb;
-    flex-grow: 1
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    
 }
 
 input[type="text"],
@@ -107,9 +110,21 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: ease-out 0.5s;
 }
 
-button[type="submit"]:hover {
-    background-color: #5a75d1;
-}
+
+
+
+.btn{
+    background: #303439;
+    box-shadow: inset 0 0 200px 0 #6e8efb;
+    }
+    .btn:hover{
+    box-shadow: inset 0 0 0 0 #6e8efb;
+    }
+
+
+
+
+    
