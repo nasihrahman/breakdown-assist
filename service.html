@@ -3,9 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Request Road Assistance</title>
+    <link rel="stylesheet" href="/css/servicecss.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,800;1,800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <div class="main">
+        <div class="left-container">
+        <h1>Request <br>On-Road Assistance</h1>
+    </div>
+    <div class="form-container">
+        
+        <form id="assistanceForm">
+            <!-- Vehicle Type as Radio Buttons -->
+            <label>Vehicle Type:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="vehicleType" value="Bike" required>
+                    Bike
+                </label>
+                <label>
+                    <input type="radio" name="vehicleType" value="Car" required>
+                    Car
+                </label>
+            </div>
+
+            <!-- Name -->
+            <div class="rest-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Contact Number -->
+            <label for="contactNumber">Contact Number:</label>
+            <input type="tel" id="contactNumber" name="contactNumber" pattern="[0-9]{10}" required placeholder="1234567890">
+
+            <!-- Location -->
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <!-- Vehicle Problem (Optional) -->
+            <label for="vehicleProblem">Vehicle Problem (Optional):</label>
+            <textarea id="vehicleProblem" name="vehicleProblem" rows="3" placeholder="Describe the issue"></textarea>
+
+            <!-- Required Service -->
+            <label for="service">Required Service:</label>
+            <select id="service" name="service" required>
+                <option value="">Select Service</option>
+                <option value="Towing">Towing</option>
+                <option value="Battery Jump Start">Battery Jump Start</option>
+                <option value="Flat Tire Assistance">Flat Tire Assistance</option>
+                <option value="Fuel Delivery">Fuel Delivery</option>
+                <option value="Lockout Service">Lockout Service</option>
+            </select>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Request</button>
+        </div>
+        </form>
+    </div>
+</div>
+<!-- Script for form validation -->
+<script>
+    document.getElementById("assistanceForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Your request for on-road assistance has been submitted!");
+        // Here you can add code to send the form data to a server
+        // or handle it in any other way as required.
+    });
+</script>
+
 </body>
 </html>

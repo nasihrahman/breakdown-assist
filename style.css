@@ -101,7 +101,7 @@
 
 #our-services1{
   
-  color: #03346E;
+  color: #021526;
   font-family: 'Bigger';
   width: 100%;
   text-transform: uppercase;
@@ -210,8 +210,11 @@ body {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
+  /* transition: transform 0.3s; */
   text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .benefit-card:hover {
@@ -236,6 +239,16 @@ body {
   line-height: 1.5;
 }
 
+/* Initial hidden state for the cards */
+
+
+/* Class to animate the cards */
+.benefit-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 .part1{
   font-family: 'Poppins','Raleway';
   
@@ -243,4 +256,20 @@ body {
 
   .assist{
     background-color: #6EACDA;
+  }
+
+  .get-assist{
+    width: 160px;
+    height: 50px;
+    background-color: #03346E;
+    color: #CEE6F3;
+    font-family: 'Raleway';
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .get-assist:hover {
+    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
   }
