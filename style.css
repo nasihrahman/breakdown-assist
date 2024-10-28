@@ -55,6 +55,9 @@
 }
 
 
+
+
+
 .hero-text h4{
   color: #FCFAEE;
   font-family: 'Bigger','Poppins';
@@ -269,7 +272,7 @@ body {
   }
 
   .get-assist:hover {
-    background: linear-gradient(135deg, #a777e3, #6e8efb);
+    background: #021526;
     box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
     transform: translateY(-3px);
   }
