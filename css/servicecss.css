@@ -15,11 +15,16 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #dddddd;
+    background-color: #fafafa;
 }
 .main{
     display: flex;
     height: 100%;
+    box-shadow:
+  1.9px 11.5px 5.2px rgba(0, 0, 0, 0.028),
+  4.1px 24px 11.9px rgba(0, 0, 0, 0.04),
+  7.4px 43.7px 24px rgba(0, 0, 0, 0.052),
+  20px 118px 76px rgba(0, 0, 0, 0.08);
 }
 
 .form-container {
