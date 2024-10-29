@@ -1,33 +1,69 @@
 /* Basic styling for the Contact Us form */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+#hero-card{
+    background-color: #FF6600;
+    height: 400px;
+    position: relative;
+}
+
+svg{
+    margin-left: 15px;
+    color: #FF6600;
+    margin-top: -20px;
+}
+
+label{
+    font-family: 'Montserrat';
+}
+
+/* input[type="text"],
+input[type="email"],
+textarea,select{
+    background-color:#e7e7e774;
+} */
+
+#contact-us{
+    position: absolute;
     background-color: #f3f3f3;
+    border-radius: 4px;
+    width: 65%;
+    box-shadow:
+  1.9px 11.5px 5.2px rgba(0, 0, 0, 0.028),
+  4.1px 24px 11.9px rgba(0, 0, 0, 0.04),
+  7.4px 43.7px 24px rgba(0, 0, 0, 0.052),
+  20px 118px 76px rgba(0, 0, 0, 0.08);
+    top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-
-#contact-us {
-    background-color: #fff;
-    padding: 60px 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 h2 {
+    font-family: 'Poppins','Raleway';
     font-weight: bold;
     color: #333;
 }
 
 .btn-primary {
-    background-color: #ffdd00;
+    background-color: #FF6600;
     color: #333;
     border: none;
 }
 
 .btn-primary:hover {
-    background-color: #ffcc00;
+    background-color: #ff4400;
 }
 
 #responseMessage {
     text-align: center;
     font-weight: bold;
     color: green;
+}
+
+p{
+    font-family: 'Montserrat';
+    font-weight: 300px;
 }
