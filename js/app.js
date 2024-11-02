@@ -26,3 +26,10 @@ $(document).ready(function() {
     // Trigger animation on page load (if already in view)
     animateCards();
 });
+
+
+
+
+document.getElementById("assistanceForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Your request for on-road assistance has been submitted!")})

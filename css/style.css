@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+
+  #mainNav{
+    background-color: #0C0C0C;
+    height: 4em; 
+  }
+
+  @font-face {
+    font-family: Bigger;
+    src: url(font/BiggerDisplay.otf);
+  }
+
+#navbar-items a{
+    padding: 18px;
+    font-family: 'Poppins','sans-serif';
+    font-weight: 500px;
+    font-size: medium;
+    /* color: #FCFAEE; */
+}
+
+.navbar-brand{
+  margin-left: 30px;
+}
+
+#navbar-div{
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-container{
+    height: 665px;
+    background-color: #FCFAEE;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    background-image: url('wor.png');
+}
+
+
+.hero-text{
+  width: 33rem;
+  height: 25rem;
+  border: 2.5px solid #FCFAEE;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.hero-text h4{
+  color: #FCFAEE;
+  font-family: 'Bigger','Poppins';
+  font-size: 20px;
+}
+
+.hero-text h1{
+  color: #FCFAEE;
+  font-family: 'Bigger','Poppins';
+  font-size: 40Px;
+}
+
+#hero-btn{
+  width: 16.4rem;
+  height: 3rem;
+  background-color: #FCFAEE;
+  border: 2px solid #E2E2B6;
+  color: #03346E;
+  font-family: 'Poppins';
+  font-weight: 900;
+  margin-top: 15px;
+}
+
+.part1 ul{  
+  list-style-type: decimal !important;
+  padding-left:1em !important;
+  margin-left:1em;
+}
+
+
+
+#our-services{
+  background-color: #03346E;
+  color: #6EACDA;
+  font-family: 'Bigger';
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#our-services1{
+  
+  color: #021526;
+  font-family: 'Bigger';
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#how-it-works {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.section-description {
+  color: #666;
+}
+
+.step-card {
+  border: none;
+  height: 900px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+}
+
+.step-icon {
+  font-size: 3rem;
+  color: #ffdd00;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-weight: bold;
+  color: #333;
+  font-family: 'Poppins','Raleway';
+}
+
+.card-text {
+  color: #555;
+  font-family: 'Poppins','Raleway';
+}
+
+.card-body{
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #CEE6F3;
+}
+
+
+/* Reset some default styles */
+
+
+body {
+  font-family: 'Poppins', 'Raleway','Monsterrat',sans-serif;
+  background-color: #f3f3f3;
+}
+
+/* Why Choose Us Section Styling */
+#why-choose-us {
+  padding: 60px 0px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+/* .container {
+  max-width: 1200px;
+  margin: auto;
+} */
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-description {
+  color: #666;
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+}
+
+/* Benefits Grid */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* transition: transform 0.3s; */
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  color: #ffdd00;
+  margin-bottom: 15px;
+}
+
+.benefit-card h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Initial hidden state for the cards */
+
+
+/* Class to animate the cards */
+.benefit-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.part1{
+  font-family: 'Poppins','Raleway';
+  
+  }
+
+  .assist{
+    background-color: #6EACDA;
+  }
+
+  .get-assist{
+    width: 160px;
+    height: 50px;
+    background-color: #03346E;
+    color: #CEE6F3;
+    font-family: 'Raleway';
+    border-radius: 30px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .get-assist:hover {
+    background: #021526;
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
